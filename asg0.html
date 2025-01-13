@@ -1,0 +1,49 @@
+<!--Xiaohua Huo-->
+<!--xhuo3@ucsc.edu-->
+<!--Notes to Grader:-->
+<!--Thank you!-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Draw a blue rectangle (canvas version)</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="example" width="400" height="400">
+      Please use a browser that supports "canvas"
+    </canvas>
+    <script src="asg0.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <br><br>
+    <div>
+      <text>v1:x </text><input type="number" id="v1x">
+      <text> y </text><input type="number" id="v1y">
+    </div>
+    <br>
+    <div>
+      <text>v2:x </text><input type="number" id="v2x">
+      <text> y </text><input type="number" id="v2y">
+    </div>
+    <br>
+    <button onclick="handleDrawEvent()">Draw</button>
+    <br><br><br><br>
+    <div>
+      <text>Operation: </text>
+      <select id="selector">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+        <option value="mag">Magnitude</option>
+        <option value="nor">Normalize</option>
+        <option value="angle">Angle Between</option>
+        <option value="area">Area</option>
+      </select>
+      <text> Scalar: </text><input type="number" id="scalar">
+    </div>
+    <br>
+    <button onclick="handleDrawOperationEvent()">Draw</button>
+  </body>
+</html>
